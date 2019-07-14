@@ -30,7 +30,6 @@ class UserdropdownList extends React.Component {
     render() {
         return (
             <div>
-
                 <form>
                     <select value={this.state.user} onChange={this.handleChange}>
                         <option value="">select</option>
@@ -42,7 +41,7 @@ class UserdropdownList extends React.Component {
 
                     </select>
                 </form>
-                {Object.keys(this.state.user).length > 0 && <UserdropdownShow user={this.state.user} />}
+                {Object.keys(this.state.user).length > 0 && <UserdropdownShow user={this.state.user}/>}
             </div>
         )
     }
